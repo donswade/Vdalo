@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VDALO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header black">
+      <div class="container">
+        <a href="index.html" class="header__logo">
+          <img src="./images/logo.svg" alt="logo" width="146" height="40" />
+        </a>
+        <div class="header__block">
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li">
+                <a href="#" class="header__link"> Головна </a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__link"> Послуги </a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__link"> Кейси </a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__link"> Блог </a>
+              </li>
+              <li class="header__li">
+                <a href="#" class="header__link"> Про нас </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__social">
+            <li class="header__social_link">
+              <a href="#">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 5.625C0 2.5184 2.5184 0 5.625 0H30.375C33.4816 0 36 2.5184 36 5.625V30.375C36 33.4816 33.4816 36 30.375 36H5.625C2.5184 36 0 33.4816 0 30.375V5.625ZM18 9C22.95 9 27 13.05 27 18C27 22.5 23.7375 26.325 19.2375 27V20.5875H21.375L21.825 18H19.35V16.3125C19.35 15.6375 19.6875 14.9625 20.8125 14.9625H21.9375V12.7125C21.9375 12.7125 20.925 12.4875 19.9125 12.4875C17.8875 12.4875 16.5375 13.725 16.5375 15.975V18H14.2875V20.5875H16.5375V26.8875C12.2625 26.2125 9 22.5 9 18C9 13.05 13.05 9 18 9Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__social_link">
+              <a href="#">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20.925 18L16.2 15.3V20.7L20.925 18Z" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 5.625C0 2.5184 2.5184 0 5.625 0H30.375C33.4816 0 36 2.5184 36 5.625V30.375C36 33.4816 33.4816 36 30.375 36H5.625C2.5184 36 0 33.4816 0 30.375V5.625ZM24.975 12.0375C25.7625 12.2625 26.325 12.825 26.55 13.6125C27 15.075 27 18 27 18C27 18 27 20.925 26.6625 22.3875C26.4375 23.175 25.875 23.7375 25.0875 23.9625C23.625 24.3 18 24.3 18 24.3C18 24.3 12.2625 24.3 10.9125 23.9625C10.125 23.7375 9.5625 23.175 9.3375 22.3875C9 20.925 9 18 9 18C9 18 9 15.075 9.225 13.6125C9.45 12.825 10.0125 12.2625 10.8 12.0375C12.2625 11.7 17.8875 11.7 17.8875 11.7C17.8875 11.7 23.625 11.7 24.975 12.0375Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__social_link">
+              <a href="#">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 21.15C16.3125 21.15 14.85 19.8 14.85 18C14.85 16.3125 16.2 14.85 18 14.85C19.6875 14.85 21.15 16.2 21.15 18C21.15 19.6875 19.6875 21.15 18 21.15Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.825 10.35H14.175C13.275 10.4625 12.825 10.575 12.4875 10.6875C12.0375 10.8 11.7 11.025 11.3625 11.3625C11.0954 11.6296 10.9693 11.8966 10.8167 12.2194C10.7766 12.3045 10.7344 12.3937 10.6875 12.4875C10.6701 12.5397 10.65 12.5946 10.6285 12.6535C10.5108 12.975 10.35 13.4142 10.35 14.175V21.825C10.4625 22.725 10.575 23.175 10.6875 23.5125C10.8 23.9625 11.025 24.3 11.3625 24.6375C11.6296 24.9046 11.8966 25.0307 12.2194 25.1833C12.3046 25.2235 12.3936 25.2655 12.4875 25.3125C12.5397 25.3299 12.5946 25.35 12.6535 25.3715C12.975 25.4892 13.4142 25.65 14.175 25.65H21.825C22.725 25.5375 23.175 25.425 23.5125 25.3125C23.9625 25.2 24.3 24.975 24.6375 24.6375C24.9046 24.3704 25.0307 24.1034 25.1833 23.7806C25.2235 23.6955 25.2656 23.6064 25.3125 23.5125C25.3299 23.4603 25.35 23.4054 25.3715 23.3465C25.4892 23.025 25.65 22.5858 25.65 21.825V14.175C25.5375 13.275 25.425 12.825 25.3125 12.4875C25.2 12.0375 24.975 11.7 24.6375 11.3625C24.3704 11.0954 24.1034 10.9693 23.7806 10.8167C23.6956 10.7766 23.6063 10.7344 23.5125 10.6875C23.4603 10.6701 23.4054 10.65 23.3465 10.6285C23.025 10.5108 22.5858 10.35 21.825 10.35ZM18 13.1625C15.3 13.1625 13.1625 15.3 13.1625 18C13.1625 20.7 15.3 22.8375 18 22.8375C20.7 22.8375 22.8375 20.7 22.8375 18C22.8375 15.3 20.7 13.1625 18 13.1625ZM24.075 13.05C24.075 13.6713 23.5713 14.175 22.95 14.175C22.3287 14.175 21.825 13.6713 21.825 13.05C21.825 12.4287 22.3287 11.925 22.95 11.925C23.5713 11.925 24.075 12.4287 24.075 13.05Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 5.625C0 2.5184 2.5184 0 5.625 0H30.375C33.4816 0 36 2.5184 36 5.625V30.375C36 33.4816 33.4816 36 30.375 36H5.625C2.5184 36 0 33.4816 0 30.375V5.625ZM14.175 8.6625H21.825C22.8375 8.775 23.5125 8.8875 24.075 9.1125C24.75 9.45 25.2 9.675 25.7625 10.2375C26.325 10.8 26.6625 11.3625 26.8875 11.925C27.1125 12.4875 27.3375 13.1625 27.3375 14.175V21.825C27.225 22.8375 27.1125 23.5125 26.8875 24.075C26.55 24.75 26.325 25.2 25.7625 25.7625C25.2 26.325 24.6375 26.6625 24.075 26.8875C23.5125 27.1125 22.8375 27.3375 21.825 27.3375H14.175C13.1625 27.225 12.4875 27.1125 11.925 26.8875C11.25 26.55 10.8 26.325 10.2375 25.7625C9.675 25.2 9.3375 24.6375 9.1125 24.075C8.8875 23.5125 8.6625 22.8375 8.6625 21.825V14.175C8.775 13.1625 8.8875 12.4875 9.1125 11.925C9.45 11.25 9.675 10.8 10.2375 10.2375C10.8 9.675 11.3625 9.3375 11.925 9.1125C12.4875 8.8875 13.1625 8.6625 14.175 8.6625Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="header__button">Зв’язатися з нами</button>
+        <button class="header__mobile">
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <section class="firstScreen black">
+      <div class="container">
+        <h1 class="firstScreen__title">
+          Збільшуємо продажі <br />
+          за допомогою <br />
+          реклами!
+          <span class="firstScreen__text white-opacity">
+            ДОПОМАГАЄМО ПРОДАВАТИ ТОВАРИ ТА <br />
+            ПОСЛУГИ ЧЕРЕЗ GOOGLE, FACEBOOK, INSTAGRAM
+          </span>
+        </h1>
+
+        <section class="firstSection__benefit">
+          <article class="firstSection__block plus">
+            <h2 class="firstSection__benefit_title">
+              600+ клієнтів за 6 років (Volvo, Fiat, Сільпо та ін.)
+            </h2>
+          </article>
+          <article class="firstSection__block plus">
+            <h2 class="firstSection__benefit_title">
+              Офіційні партнери Google та Meta
+            </h2>
+          </article>
+          <article class="firstSection__block plus">
+            <h2 class="firstSection__benefit_title">
+              Оперативна підтримка 7 днів на тиждень
+            </h2>
+          </article>
+        </section>
+        <a href="thanks.html" class="firstSection__button">
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.6871 10.621L25.4701 10.6208M25.4701 10.6208L25.4701 23.222M25.4701 10.6208L10.6209 25.47"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          Замовити консультацію
+        </a>
+        <strong class="firstSection__text">Збільшуємо продажі</strong>
+      </div>
+    </section>
+    <div class="br-35">
+      <section class="case">
+        <div class="container">
+          <h1 class="case__title title">Наші Кейси</h1>
+          <section class="case__swiper">
+            <div class="case__swiper-wrapper swiper-wrapper">
+              <article
+                class="case__swiper-slide swiper-slide case__swiper-slide_active"
+              >
+                Всі кейси
+              </article>
+              <article class="case__swiper-slide swiper-slide">
+                Навчання
+              </article>
+              <article class="case__swiper-slide swiper-slide">
+                Нерухомість
+              </article>
+              <article class="case__swiper-slide swiper-slide">Послуги</article>
+              <article class="case__swiper-slide swiper-slide">
+                Продаж товарів
+              </article>
+            </div>
+          </section>
+          <section class="case__wrapper">
+            <article class="case__column br-20">
+              <div class="case__imgWrapper">
+                <img
+                  src="./images/clockcase.jpg"
+                  alt="case img"
+                  class="case__img"
+                />
+              </div>
+              <h1 class="case__columnTitle">ChrisBi</h1>
+              <p class="case__columnDescription white-opacity">
+                Годинники ручної роботи
+              </p>
+              <div class="case__block">
+                <div class="case__row">
+                  <span class="case__price"> 1502$ </span>
+                  <span class="case__text white-opacity"
+                    >Витрачений <br />
+                    бюджет</span
+                  >
+                </div>
+                <div class="case__row">
+                  <span class="case__price"> 18 865$ </span>
+                  <span class="case__text white-opacity"
+                    >Ціна за <br />
+                    заявку</span
+                  >
+                </div>
+                <div class="case__row">
+                  <span class="case__price"> 53,65$ </span>
+                  <span class="case__text white-opacity"
+                    >Вартість <br />
+                    продажу</span
+                  >
+                </div>
+              </div>
+              <button class="case__button bt-90">Детальніше про кейс</button>
+            </article>
+            <article class="case__column br-20">
+              <div class="case__imgWrapper">
+                <img
+                  src="./images/girlscase.jpg"
+                  alt="case img"
+                  class="case__img"
+                />
+              </div>
+              <h1 class="case__columnTitle">PuPu</h1>
+              <p class="case__columnDescription white-opacity">
+                Український бренд
+              </p>
+              <div class="case__block">
+                <div class="case__row">
+                  <span class="case__price"> 1502$ </span>
+                  <span class="case__text white-opacity"
+                    >Витрачений <br />
+                    бюджет</span
+                  >
+                </div>
+                <div class="case__row">
+                  <span class="case__price"> 18 865$ </span>
+                  <span class="case__text white-opacity"
+                    >Ціна за <br />
+                    заявку</span
+                  >
+                </div>
+                <div class="case__row">
+                  <span class="case__price"> 53,65$ </span>
+                  <span class="case__text white-opacity"
+                    >Вартість <br />
+                    продажу</span
+                  >
+                </div>
+              </div>
+              <button class="case__button bt-90">Детальніше про кейс</button>
+            </article>
+            <article class="case__column br-20">
+              <div class="case__imgWrapper">
+                <img
+                  src="./images/shoescase.jpg"
+                  alt="case img"
+                  class="case__img"
+                />
+              </div>
+              <h1 class="case__columnTitle">Betori</h1>
+              <p class="case__columnDescription white-opacity">
+                Український інсташоп
+              </p>
+              <div class="case__block">
+                <div class="case__row">
+                  <span class="case__price"> 14 540$ </span>
+                  <span class="case__text white-opacity"
+                    >Витрачений <br />
+                    бюджет</span
+                  >
+                </div>
+                <div class="case__row">
+                  <span class="case__price"> 14 540$ </span>
+                  <span class="case__text white-opacity"
+                    >Ціна за <br />
+                    заявку</span
+                  >
+                </div>
+                <div class="case__row">
+                  <span class="case__price"> 5,73$ </span>
+                  <span class="case__text white-opacity"
+                    >Вартість <br />
+                    продажу</span
+                  >
+                </div>
+              </div>
+              <button class="case__button bt-90">Детальніше про кейс</button>
+            </article>
+          </section>
+        </div>
+      </section>
+    </div>
+    <div class="br-35 t-75"></div>
+    <section class="contact black">
+      <section class="recomendation">
+        <div class="container">
+          <div class="recomendation__swiper swiper3">
+            <h2 class="recomendation__title title">Клієнти нас рекомендують</h2>
+            <div class="recomendation__swiper-wrapper swiper-wrapper">
+              <article class="recomendation__swiper-slide swiper-slide br-20">
+                <h3 class="recomendation__swiper_title">King Mebel</h3>
+                <p class="recomendation__swiper_description white-opacity">
+                  Дизайнерські меблі
+                </p>
+                <span class="recomendation__swiper_time purpleBlock">1:47</span>
+              </article>
+              <article class="recomendation__swiper-slide swiper-slide br-20">
+                <h3 class="recomendation__swiper_title">King Mebel</h3>
+                <p class="recomendation__swiper_description white-opacity">
+                  Дизайнерські меблі
+                </p>
+                <span class="recomendation__swiper_time purpleBlock">1:47</span>
+              </article>
+              <article class="recomendation__swiper-slide swiper-slide br-20">
+                <h3 class="recomendation__swiper_title">King Mebel</h3>
+                <p class="recomendation__swiper_description white-opacity">
+                  Дизайнерські меблі
+                </p>
+                <span class="recomendation__swiper_time purpleBlock">1:47</span>
+              </article>
+              <article class="recomendation__swiper-slide swiper-slide br-20">
+                <h3 class="recomendation__swiper_title">King Mebel</h3>
+                <p class="recomendation__swiper_description white-opacity">
+                  Дизайнерські меблі
+                </p>
+                <span class="recomendation__swiper_time purpleBlock">1:47</span>
+              </article>
+            </div>
+            <div class="recomendation__swiper-button-prev prev pr3"></div>
+            <div class="recomendation__swiper-button-next next nx3"></div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="contact__row">
+          <form class="contact__form">
+            <h2 class="contact__form_title title">
+              СКОНВЕРТУЙТЕ ВАШУ <br />
+              АУДИТОРІЮ В інтернеті!
+            </h2>
+            <p class="contact__form_desciption white-opacity">
+              Ви будете краще розуміти своїх клієнтів, як покращити для них
+              <br />
+              продукт, маркетинг, продажі та сервіс.
+            </p>
+            <h4 class="contact__form_text">ваші контакти</h4>
+            <input
+              type="text"
+              placeholder="Ваше ім’я*"
+              class="contact__form_input"
+            />
+            <div class="contact__form_row">
+              <input
+                type="text"
+                placeholder="Ваш номер телефону*"
+                class="contact__form_input"
+              />
+              <input
+                type="text"
+                placeholder="Ваша ніша"
+                class="contact__form_input"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Отримати"
+              class="contact__form_input"
+            />
+            <div class="contact__form_flex">
+              <button class="contact__form_button bt-90">
+                Отримати консультацію
+              </button>
+              <p class="contact__form_oferta white-opacity-50">
+                Натискаючи кнопку “Обговорити проєкт”, ви даєте згоду на обробку
+                особистих даних.
+                <a href="#" class="contact__form_oferta_link">Детальніше</a>
+              </p>
+            </div>
+          </form>
+          <div class="contact__line"></div>
+          <div class="contact__column">
+            <h3 class="contact__column_title">наші контакти</h3>
+            <button class="contact__column_button">
+              vdalo.agency@gmail.com
+            </button>
+            <button class="contact__column_button">+38 063 678 30 44</button>
+            <div class="contact__column_block">
+              <p class="contact__column_text white-opacity-50">
+                м. Київ, вул. Болсунівська, 13-15, БЦ "IQ", офіс 832
+              </p>
+              <button class="contact__column_button">
+                Подивитися на карті
+                <img
+                  src="./images/arrow-up-right.svg"
+                  alt=""
+                  width="36px"
+                  height="36px"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__column">
+            <a href="#" class="footer__logoBlock">
+              <img
+                width="146px"
+                height="40px"
+                class="footer__logo"
+                src="./images/footer.svg"
+                alt="logo"
+              />
+            </a>
+            <p class="footer__text white-opacity">
+              Допомагаємо продавати товари та послуги <br />
+              через Google, Facebook, Instagram.
+            </p>
+            <div class="footer__social">
+              <li class="footer__social_link">
+                <a href="#">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 5.625C0 2.5184 2.5184 0 5.625 0H30.375C33.4816 0 36 2.5184 36 5.625V30.375C36 33.4816 33.4816 36 30.375 36H5.625C2.5184 36 0 33.4816 0 30.375V5.625ZM18 9C22.95 9 27 13.05 27 18C27 22.5 23.7375 26.325 19.2375 27V20.5875H21.375L21.825 18H19.35V16.3125C19.35 15.6375 19.6875 14.9625 20.8125 14.9625H21.9375V12.7125C21.9375 12.7125 20.925 12.4875 19.9125 12.4875C17.8875 12.4875 16.5375 13.725 16.5375 15.975V18H14.2875V20.5875H16.5375V26.8875C12.2625 26.2125 9 22.5 9 18C9 13.05 13.05 9 18 9Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social_link">
+                <a href="#">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.925 18L16.2 15.3V20.7L20.925 18Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 5.625C0 2.5184 2.5184 0 5.625 0H30.375C33.4816 0 36 2.5184 36 5.625V30.375C36 33.4816 33.4816 36 30.375 36H5.625C2.5184 36 0 33.4816 0 30.375V5.625ZM24.975 12.0375C25.7625 12.2625 26.325 12.825 26.55 13.6125C27 15.075 27 18 27 18C27 18 27 20.925 26.6625 22.3875C26.4375 23.175 25.875 23.7375 25.0875 23.9625C23.625 24.3 18 24.3 18 24.3C18 24.3 12.2625 24.3 10.9125 23.9625C10.125 23.7375 9.5625 23.175 9.3375 22.3875C9 20.925 9 18 9 18C9 18 9 15.075 9.225 13.6125C9.45 12.825 10.0125 12.2625 10.8 12.0375C12.2625 11.7 17.8875 11.7 17.8875 11.7C17.8875 11.7 23.625 11.7 24.975 12.0375Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social_link">
+                <a href="#">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 21.15C16.3125 21.15 14.85 19.8 14.85 18C14.85 16.3125 16.2 14.85 18 14.85C19.6875 14.85 21.15 16.2 21.15 18C21.15 19.6875 19.6875 21.15 18 21.15Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.825 10.35H14.175C13.275 10.4625 12.825 10.575 12.4875 10.6875C12.0375 10.8 11.7 11.025 11.3625 11.3625C11.0954 11.6296 10.9693 11.8966 10.8167 12.2194C10.7766 12.3045 10.7344 12.3937 10.6875 12.4875C10.6701 12.5397 10.65 12.5946 10.6285 12.6535C10.5108 12.975 10.35 13.4142 10.35 14.175V21.825C10.4625 22.725 10.575 23.175 10.6875 23.5125C10.8 23.9625 11.025 24.3 11.3625 24.6375C11.6296 24.9046 11.8966 25.0307 12.2194 25.1833C12.3046 25.2235 12.3936 25.2655 12.4875 25.3125C12.5397 25.3299 12.5946 25.35 12.6535 25.3715C12.975 25.4892 13.4142 25.65 14.175 25.65H21.825C22.725 25.5375 23.175 25.425 23.5125 25.3125C23.9625 25.2 24.3 24.975 24.6375 24.6375C24.9046 24.3704 25.0307 24.1034 25.1833 23.7806C25.2235 23.6955 25.2656 23.6064 25.3125 23.5125C25.3299 23.4603 25.35 23.4054 25.3715 23.3465C25.4892 23.025 25.65 22.5858 25.65 21.825V14.175C25.5375 13.275 25.425 12.825 25.3125 12.4875C25.2 12.0375 24.975 11.7 24.6375 11.3625C24.3704 11.0954 24.1034 10.9693 23.7806 10.8167C23.6956 10.7766 23.6063 10.7344 23.5125 10.6875C23.4603 10.6701 23.4054 10.65 23.3465 10.6285C23.025 10.5108 22.5858 10.35 21.825 10.35ZM18 13.1625C15.3 13.1625 13.1625 15.3 13.1625 18C13.1625 20.7 15.3 22.8375 18 22.8375C20.7 22.8375 22.8375 20.7 22.8375 18C22.8375 15.3 20.7 13.1625 18 13.1625ZM24.075 13.05C24.075 13.6713 23.5713 14.175 22.95 14.175C22.3287 14.175 21.825 13.6713 21.825 13.05C21.825 12.4287 22.3287 11.925 22.95 11.925C23.5713 11.925 24.075 12.4287 24.075 13.05Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 5.625C0 2.5184 2.5184 0 5.625 0H30.375C33.4816 0 36 2.5184 36 5.625V30.375C36 33.4816 33.4816 36 30.375 36H5.625C2.5184 36 0 33.4816 0 30.375V5.625ZM14.175 8.6625H21.825C22.8375 8.775 23.5125 8.8875 24.075 9.1125C24.75 9.45 25.2 9.675 25.7625 10.2375C26.325 10.8 26.6625 11.3625 26.8875 11.925C27.1125 12.4875 27.3375 13.1625 27.3375 14.175V21.825C27.225 22.8375 27.1125 23.5125 26.8875 24.075C26.55 24.75 26.325 25.2 25.7625 25.7625C25.2 26.325 24.6375 26.6625 24.075 26.8875C23.5125 27.1125 22.8375 27.3375 21.825 27.3375H14.175C13.1625 27.225 12.4875 27.1125 11.925 26.8875C11.25 26.55 10.8 26.325 10.2375 25.7625C9.675 25.2 9.3375 24.6375 9.1125 24.075C8.8875 23.5125 8.6625 22.8375 8.6625 21.825V14.175C8.775 13.1625 8.8875 12.4875 9.1125 11.925C9.45 11.25 9.675 10.8 10.2375 10.2375C10.8 9.675 11.3625 9.3375 11.925 9.1125C12.4875 8.8875 13.1625 8.6625 14.175 8.6625Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h5 class="footer__column_title">Компанія</h5>
+            <p class="footer__column_text white-opacity">Послуги</p>
+            <p class="footer__column_text white-opacity">Про нас</p>
+            <p class="footer__column_text white-opacity">Вакансії</p>
+            <p class="footer__column_text white-opacity">
+              Умови надання послуг
+            </p>
+            <p class="footer__column_text white-opacity">
+              Політика конфіденційності
+            </p>
+          </div>
+          <div class="footer__column">
+            <h5 class="footer__column_title">послуги</h5>
+            <p class="footer__column_text white-opacity">Таргетована реклама</p>
+            <p class="footer__column_text white-opacity">Google Ads</p>
+            <p class="footer__column_text white-opacity">SEO</p>
+            <p class="footer__column_text white-opacity">TikTok реклама</p>
+          </div>
+          <div class="footer__column">
+            <h5 class="footer__column_title">Контакти</h5>
+            <button class="footer__column_button">
+              vdalo.agency@gmail.com
+            </button>
+            <button class="footer__column_button">+38 063 678 30 44</button>
+          </div>
+        </div>
+        <div class="footer__row">
+          <p class="footer__row_text white-opacity">
+            © Всі захищені ТОВ «‎ВДАЛО ДІДЖИТАЛ ЕДЖЕНСІ», 2017 – 2023
+          </p>
+          <p class="footer__row_text white-opacity">
+            м. Київ, вул. Болсунівська, 13-15, БЦ "IQ", офіс 832
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
