@@ -1,11 +1,12 @@
-const { src, dest, watch, parallel, series } = require('gulp');
-const scss = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
-const uglify = require('gulp-uglify-es').default;
-const autoprefixer = require('gulp-autoprefixer');
-const imagemin = require('gulp-imagemin');
-const del = require('del');
+const { src, dest, watch, parallel, series } = require('gulp')
+const scss = require('gulp-sass')(require('sass'))
+const concat = require('gulp-concat')
+const browserSync = require('browser-sync').create()
+const uglify = require('gulp-uglify-es').default
+const autoprefixer = require('gulp-autoprefixer')
+const imagemin = require('gulp-imagemin')
+const pug = require('gulp-pug')
+const del = require('del')
 
 function styles() {
     return src('dist/scss/*.scss')
@@ -26,6 +27,7 @@ function browsersync() {
         }
     })
 }
+
 
 function scripts() {
     return src(['dist/js/main.js'])
@@ -66,22 +68,24 @@ function cleanDist() {
 }
 
 function watching() {
-    watch(['dist/scss/**/*.scss'], styles);
-    watch(["dist/js/**/*.js", '!dist/js/main.min.js'], scripts);
-    watch(["dist/*.html"]).on('change', browserSync.reload);
+    watch(['dist/scss/**/*.scss'], styles)
+    watch(["dist/js/**/*.js", '!dist/js/main.min.js'], scripts)
+
+    watch(["dist/*.html"]).on('change', browserSync.reload)
 }
 
 
 
 
-exports.styles = styles;
-exports.watching = watching;
-exports.browsersync = browsersync;
-exports.scripts = scripts;
-exports.images = images;
-exports.cleanDist = cleanDist;
+exports.styles = styles
+exports.watching = watching
+exports.browsersync = browsersync
+exports.scripts = scripts
 
-exports.build = series(cleanDist, images, build);
+exports.images = images
+exports.cleanDist = cleanDist
+
+exports.build = series(cleanDist, images, build)
 exports.default = parallel(styles, scripts, browsersync, watching);
 
 
