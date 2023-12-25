@@ -24,7 +24,7 @@
                 <a href="#" class="header__link"> Головна </a>
               </li>
               <li class="header__li">
-                <a href="#" class="header__link"> Послуги </a>
+                <a href="#service" class="header__link"> Послуги </a>
               </li>
               <li class="header__li">
                 <a href="case.html" class="header__link"> Кейси </a>
@@ -33,7 +33,7 @@
                 <a href="blog.html" class="header__link"> Блог </a>
               </li>
               <li class="header__li">
-                <a href="#" class="header__link"> Про нас </a>
+                <a href="aboutUs.html" class="header__link"> Про нас </a>
               </li>
             </ul>
           </nav>
@@ -105,7 +105,7 @@
             </li>
           </ul>
         </div>
-        <button class="header__button">Зв’язатися з нами</button>
+        <a href="#consultation" class="header__button">Зв’язатися з нами</a>
         <button class="header__mobile">
           <span></span>
         </button>
@@ -140,7 +140,7 @@
             </h2>
           </article>
         </section>
-        <a href="thanks.html" class="firstSection__button">
+        <a href="#consultation" class="firstSection__button">
           <svg
             width="36"
             height="36"
@@ -390,7 +390,7 @@
       </section>
       <section class="ourService">
         <div class="container">
-          <h2 class="ourService__title title">наші послуги</h2>
+          <h2 class="ourService__title title" id="service">наші послуги</h2>
           <div class="ourService__wrapper">
             <article class="ourService__column br-20">
               <h3 class="ourService__column_title">Таргетована реклама</h3>
@@ -488,9 +488,12 @@
           Реєструйтеся на безкоштовну консультацію — і отримайте перші
           рекомендації вже на дзвінку!
         </p>
-        <button class="bt-90 consultation__button">
-          Отримати консультацію
-        </button>
+        <a href="#consultation">
+          <button class="bt-90 consultation__button">
+            Отримати консультацію
+          </button>
+        </a>
+
         <section class="consultation__row">
           <article class="consultation__column br-20">
             <h3 class="consultation__column_title plus">
@@ -747,9 +750,9 @@
             type="text"
             class="formConsultation__input"
           />
-          <button class="formConsultation__button bt-90">
+          <a href="thanks.html" class="formConsultation__button bt-90">
             Отримати консультацію
-          </button>
+          </a>
         </div>
         <section class="formConsultation__wrapper">
           <h3 class="formConsultation__text ourClients__title white-opacity-50">
@@ -828,68 +831,76 @@
             <h2 class="usefulBlog__title title">корисне з блогу</h2>
             <div class="usefulBlog__swiper-wrapper swiper-wrapper">
               <article class="usefulBlog__swiper-slide swiper-slide br-20">
-                <div class="usefulBlog__swiper_imgBlock">
-                  <img
-                    src="./images/usefulloffice.jpg"
-                    alt=""
-                    class="usefulBlog__swiper_img"
-                  />
-                </div>
-                <div class="usefulBlog__swiper_block">
-                  <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
-                  <div class="usefulBlog__swiper_time white-opacity">
-                    18.09.2023
+                <a href="blog.html">
+                  <div class="usefulBlog__swiper_imgBlock">
+                    <img
+                      src="./images/usefulloffice.jpg"
+                      alt=""
+                      class="usefulBlog__swiper_img"
+                    />
                   </div>
-                  <h3 class="usefulBlog__swiper_title">Назва статті</h3>
-                </div>
+                  <div class="usefulBlog__swiper_block">
+                    <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
+                    <div class="usefulBlog__swiper_time white-opacity">
+                      18.09.2023
+                    </div>
+                    <h3 class="usefulBlog__swiper_title">Назва статті</h3>
+                  </div>
+                </a>
               </article>
               <article class="usefulBlog__swiper-slide swiper-slide br-20">
-                <div class="usefulBlog__swiper_imgBlock">
-                  <img
-                    src="./images/usefullgirl.jpg"
-                    alt=""
-                    class="usefulBlog__swiper_img"
-                  />
-                </div>
-                <div class="usefulBlog__swiper_block">
-                  <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
-                  <div class="usefulBlog__swiper_time white-opacity">
-                    18.09.2023
+                <a href="blog.html">
+                  <div class="usefulBlog__swiper_imgBlock">
+                    <img
+                      src="./images/usefullgirl.jpg"
+                      alt=""
+                      class="usefulBlog__swiper_img"
+                    />
                   </div>
-                  <h3 class="usefulBlog__swiper_title">Назва статті</h3>
-                </div>
+                  <div class="usefulBlog__swiper_block">
+                    <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
+                    <div class="usefulBlog__swiper_time white-opacity">
+                      18.09.2023
+                    </div>
+                    <h3 class="usefulBlog__swiper_title">Назва статті</h3>
+                  </div>
+                </a>
               </article>
               <article class="usefulBlog__swiper-slide swiper-slide br-20">
-                <div class="usefulBlog__swiper_imgBlock">
-                  <img
-                    src="./images/usefullphone.jpg"
-                    alt=""
-                    class="usefulBlog__swiper_img"
-                  />
-                </div>
-                <div class="usefulBlog__swiper_block">
-                  <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
-                  <div class="usefulBlog__swiper_time white-opacity">
-                    18.09.2023
+                <a href="blog.html">
+                  <div class="usefulBlog__swiper_imgBlock">
+                    <img
+                      src="./images/usefullphone.jpg"
+                      alt=""
+                      class="usefulBlog__swiper_img"
+                    />
                   </div>
-                  <h3 class="usefulBlog__swiper_title">Назва статті</h3>
-                </div>
+                  <div class="usefulBlog__swiper_block">
+                    <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
+                    <div class="usefulBlog__swiper_time white-opacity">
+                      18.09.2023
+                    </div>
+                    <h3 class="usefulBlog__swiper_title">Назва статті</h3>
+                  </div>
+                </a>
               </article>
               <article class="usefulBlog__swiper-slide swiper-slide br-20">
-                <div class="usefulBlog__swiper_imgBlock">
-                  <img
-                    src="./images/usefullphone.jpg"
-                    alt=""
-                    class="usefulBlog__swiper_img"
-                  />
-                </div>
-                <div class="usefulBlog__swiper_block">
-                  <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
-                  <div class="usefulBlog__swiper_time white-opacity">
-                    18.09.2023
+                <a href="blog.html">
+                  <div class="usefulBlog__swiper_imgBlock">
+                    <img
+                      src="./images/usefullphone.jpg"
+                      alt=""
+                      class="usefulBlog__swiper_img"
+                    />
                   </div>
-                  <h3 class="usefulBlog__swiper_title">Назва статті</h3>
-                </div>
+                  <div class="usefulBlog__swiper_block">
+                    <div class="usefulBlog__swiper_span purpleBlock">Topic</div>
+                    <div class="usefulBlog__swiper_time white-opacity">
+                      18.09.2023
+                    </div>
+                    <h3 class="usefulBlog__swiper_title">Назва статті</h3>
+                  </div>
+                </a>
               </article>
             </div>
             <div class="usefulBlog__swiper-button-prev prev pr3"></div>
@@ -974,7 +985,7 @@
     </div>
     <section class="contact m-0 black">
       <div class="container">
-        <div class="contact__row">
+        <div class="contact__row" id="consultation">
           <form class="contact__form">
             <h2 class="contact__form_title title">
               СКОНВЕРТУЙТЕ ВАШУ <br />
@@ -1030,7 +1041,7 @@
               <p class="contact__column_text white-opacity-50">
                 м. Київ, вул. Болсунівська, 13-15, БЦ "IQ", офіс 832
               </p>
-              <button class="contact__column_button">
+              <a href="contact.html" class="contact__column_button">
                 Подивитися на карті
                 <img
                   src="./images/arrow-up-right.svg"
@@ -1038,7 +1049,7 @@
                   width="36px"
                   height="36px"
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1048,7 +1059,7 @@
       <div class="container">
         <div class="footer__row">
           <div class="footer__column">
-            <a href="#" class="footer__logoBlock">
+            <a href="index.html" class="footer__logoBlock">
               <img
                 width="146px"
                 height="40px"
@@ -1134,8 +1145,12 @@
           </div>
           <div class="footer__column">
             <h5 class="footer__column_title">Компанія</h5>
-            <p class="footer__column_text white-opacity">Послуги</p>
-            <p class="footer__column_text white-opacity">Про нас</p>
+            <a href="#service" class="footer__column_text white-opacity"
+              >Послуги</a
+            >
+            <a href="aboutUs.html" class="footer__column_text white-opacity"
+              >Про нас</a
+            >
             <p class="footer__column_text white-opacity">Вакансії</p>
             <p class="footer__column_text white-opacity">
               Умови надання послуг
@@ -1149,7 +1164,9 @@
             <a href="target.html" class="footer__column_text white-opacity"
               >Таргетована реклама</a
             >
-            <p class="footer__column_text white-opacity">Google Ads</p>
+            <a href="google.html" class="footer__column_text white-opacity"
+              >Google Ads</a
+            >
             <p class="footer__column_text white-opacity">SEO</p>
             <p class="footer__column_text white-opacity">TikTok реклама</p>
           </div>
