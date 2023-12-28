@@ -24,7 +24,7 @@
                 <a href="index.html" class="header__link"> Головна </a>
               </li>
               <li class="header__li">
-                <a href="index.html#service" class="header__link"> Послуги </a>
+                <a href="#service" class="header__link"> Послуги </a>
               </li>
               <li class="header__li">
                 <a href="case.html" class="header__link"> Кейси </a>
@@ -105,9 +105,7 @@
             </li>
           </ul>
         </div>
-        <a href="index.html#consultation" class="header__button"
-          >Зв’язатися з нами</a
-        >
+        <a href="#consultation" class="header__button">Зв’язатися з нами</a>
         <button class="header__mobile">
           <span></span>
         </button>
@@ -115,10 +113,11 @@
     </header>
     <section class="firstScreen black">
       <div class="container">
-        <h1 class="firstScreen__title arrow-down">
+        <h1 class="firstScreen__title">
           Збільшуємо продажі <br />
           за допомогою <br />
           реклами!
+          <div class="arrow-down"></div>
           <span class="firstScreen__text white-opacity">
             ДОПОМАГАЄМО ПРОДАВАТИ ТОВАРИ ТА <br />
             ПОСЛУГИ ЧЕРЕЗ GOOGLE, FACEBOOK, INSTAGRAM
@@ -161,7 +160,12 @@
 
           Замовити консультацію
         </a>
-        <strong class="firstSection__text">Збільшуємо продажі</strong>
+        <div class="firstSection__text">
+          <strong class="firstSection__text_text">Збільшуємо продажі</strong>
+          <strong aria-hidden="true" class="firstSection__text_text"
+            >Збільшуємо продажі
+          </strong>
+        </div>
       </div>
     </section>
     <div class="br-35">
@@ -171,18 +175,33 @@
           <section class="case__swiper">
             <div class="case__swiper-wrapper swiper-wrapper">
               <article
+                aria-name="Всі кейси"
                 class="case__swiper-slide swiper-slide case__swiper-slide_active"
               >
                 Всі кейси
               </article>
-              <article class="case__swiper-slide swiper-slide">
+              <article
+                aria-name="Навчання"
+                class="case__swiper-slide swiper-slide"
+              >
                 Навчання
               </article>
-              <article class="case__swiper-slide swiper-slide">
+              <article
+                aria-name="Нерухомість"
+                class="case__swiper-slide swiper-slide"
+              >
                 Нерухомість
               </article>
-              <article class="case__swiper-slide swiper-slide">Послуги</article>
-              <article class="case__swiper-slide swiper-slide">
+              <article
+                aria-name="Послуги"
+                class="case__swiper-slide swiper-slide"
+              >
+                Послуги
+              </article>
+              <article
+                aria-name="Продаж товарів"
+                class="case__swiper-slide swiper-slide"
+              >
                 Продаж товарів
               </article>
             </div>
