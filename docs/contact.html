@@ -192,7 +192,7 @@
     </section>
     <section class="contact contact__white br-35">
       <div class="container">
-        <div class="contact__row">
+        <div class="contact__row" id="consultation">
           <form class="contact__form">
             <h2 class="contact__form_title title">
               СКОНВЕРТУЙТЕ ВАШУ <br />
@@ -203,33 +203,35 @@
               <br />
               продукт, маркетинг, продажі та сервіс.
             </p>
-            <h4 class="contact__form_text">ваші контакти</h4>
+            <h4 class="contact__form_text animationLeftToRight">
+              ваші контакти
+            </h4>
             <input
               type="text"
               placeholder="Ваше ім’я*"
-              class="contact__form_input"
+              class="contact__form_input animationLeftToRight"
             />
             <div class="contact__form_row">
               <input
                 type="text"
                 placeholder="Ваш номер телефону*"
-                class="contact__form_input"
+                class="contact__form_input animationLeftToRight"
               />
               <input
                 type="text"
                 placeholder="Ваша ніша"
-                class="contact__form_input"
+                class="contact__form_input animationRightToLeft"
               />
             </div>
             <input
               type="text"
               placeholder="Отримати"
-              class="contact__form_input"
+              class="contact__form_input animationLeftToRight"
             />
             <div class="contact__form_flex">
-              <button class="contact__form_button bt-90">
+              <a href="thanks.html" class="contact__form_button bt-90">
                 Отримати консультацію
-              </button>
+              </a>
               <p class="contact__form_oferta white-opacity-50">
                 Натискаючи кнопку “Обговорити проєкт”, ви даєте згоду на обробку
                 особистих даних.
@@ -248,15 +250,41 @@
               <p class="contact__column_text white-opacity-50">
                 м. Київ, вул. Болсунівська, 13-15, БЦ "IQ", офіс 832
               </p>
-              <button class="contact__column_button">
+              <a href="contact.html" class="contact__column_button">
                 Подивитися на карті
-                <img
-                  src="./images/arrow-up-right-black.svg"
-                  alt=""
-                  width="36px"
-                  height="36px"
-                />
-              </button>
+                <span>
+                  <svg
+                    width="37"
+                    height="36"
+                    viewBox="0 0 37 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.1862 10.621L25.9692 10.6208M25.9692 10.6208L25.9692 23.222M25.9692 10.6208L11.1199 25.47"
+                      stroke="#141414"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="37"
+                    height="36"
+                    viewBox="0 0 37 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.1862 10.621L25.9692 10.6208M25.9692 10.6208L25.9692 23.222M25.9692 10.6208L11.1199 25.47"
+                      stroke="#141414"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -265,16 +293,7 @@
     <section class="googleMaps">
       <div class="container">
         <div class="googleMaps__wrapper">
-          <iframe
-            class="googleMaps__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577332.5673114614!2d36.72619304503629!3d55.581033453982414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C%20Russia!5e0!3m2!1sen!2sua!4v1703355239210!5m2!1sen!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe class="googleMaps__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.9869504753183!2d30.550613276532303!3d50.421738789430705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf6e072b61a3%3A0x28b8941f826fe32!2sIQ%20Business%20Center!5e1!3m2!1suk!2sua!4v1703888338928!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>

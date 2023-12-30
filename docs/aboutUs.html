@@ -761,7 +761,7 @@
         </section>
       </div>
       <div class="container" id="consultation">
-        <div class="contact__row">
+        <div class="contact__row" id="consultation">
           <form class="contact__form">
             <h2 class="contact__form_title title">
               СКОНВЕРТУЙТЕ ВАШУ <br />
@@ -772,33 +772,35 @@
               <br />
               продукт, маркетинг, продажі та сервіс.
             </p>
-            <h4 class="contact__form_text">ваші контакти</h4>
+            <h4 class="contact__form_text animationLeftToRight">
+              ваші контакти
+            </h4>
             <input
               type="text"
               placeholder="Ваше ім’я*"
-              class="contact__form_input"
+              class="contact__form_input animationLeftToRight"
             />
             <div class="contact__form_row">
               <input
                 type="text"
                 placeholder="Ваш номер телефону*"
-                class="contact__form_input"
+                class="contact__form_input animationLeftToRight"
               />
               <input
                 type="text"
                 placeholder="Ваша ніша"
-                class="contact__form_input"
+                class="contact__form_input animationRightToLeft"
               />
             </div>
             <input
               type="text"
               placeholder="Отримати"
-              class="contact__form_input"
+              class="contact__form_input animationLeftToRight"
             />
             <div class="contact__form_flex">
-              <button class="contact__form_button bt-90">
+              <a href="thanks.html" class="contact__form_button bt-90">
                 Отримати консультацію
-              </button>
+              </a>
               <p class="contact__form_oferta white-opacity-50">
                 Натискаючи кнопку “Обговорити проєкт”, ви даєте згоду на обробку
                 особистих даних.
@@ -819,12 +821,38 @@
               </p>
               <a href="contact.html" class="contact__column_button">
                 Подивитися на карті
-                <img
-                  src="./images/arrow-up-right.svg"
-                  alt=""
-                  width="36px"
-                  height="36px"
-                />
+                <span>
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.6871 10.621L25.4701 10.6208M25.4701 10.6208L25.4701 23.222M25.4701 10.6208L10.6209 25.47"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.6871 10.621L25.4701 10.6208M25.4701 10.6208L25.4701 23.222M25.4701 10.6208L10.6209 25.47"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
