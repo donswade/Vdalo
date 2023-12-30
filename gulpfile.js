@@ -30,7 +30,7 @@ function browsersync() {
 
 
 function scripts() {
-    return src(['dist/js/*.js'])
+    return src(['dist/js/main.js'])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest('dist/js'))
@@ -58,8 +58,7 @@ function build() {
         'dist/css/style.min.css',
         'dist/fonts/**/*',
         'dist/js/main.min.js',
-        'dist/*.html',
-        "dist/data/*.json"
+        'dist/*.html'
     ], { base: 'dist' })
         .pipe(dest('docs'))
 }
