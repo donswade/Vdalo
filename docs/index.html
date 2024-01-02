@@ -113,7 +113,7 @@
             </li>
           </ul>
         </div>
-        <a href="#consultation" class="header__button">Зв’язатися з нами</a>
+        <button class="header__button toggleModalWindow">Зв’язатися з нами</button>
         <button class="header__mobile">
           <span></span>
         </button>
@@ -169,7 +169,7 @@
 
         </div>
 
-        <a href="#consultation" class="firstSection__button">
+        <button class="firstSection__button toggleModalWindow">
           <span>
             <svg
               width="36"
@@ -204,7 +204,7 @@
           </span>
 
           Замовити консультацію
-        </a>
+        </button>
       </div>
       <div class="firstSection__text">
         <strong class="firstSection__text_text">Збільшуємо продажі</strong>
@@ -522,7 +522,7 @@
           рекомендації вже на дзвінку!
         </p>
         <a href="#consultation">
-          <button class="bt-90 consultation__button">
+          <button class="bt-90 consultation__button toggleModalWindow">
             Отримати консультацію
           </button>
         </a>
@@ -783,9 +783,9 @@
             type="text"
             class="formConsultation__input"
           />
-          <a href="thanks.html" class="formConsultation__button bt-90">
+          <button class="formConsultation__button bt-90 toggleModalWindow">
             Отримати консультацію
-          </a>
+          </button>
         </div>
         <section class="formConsultation__wrapper">
           <h3 class="formConsultation__text ourClients__title white-opacity-50">
@@ -1255,6 +1255,58 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <form class="contact__form">
+        <h2 class="contact__form_title title">
+          СКОНВЕРТУЙТЕ ВАШУ <br />
+          АУДИТОРІЮ В інтернеті!
+        </h2>
+        <p class="contact__form_desciption white-opacity">
+          Ви будете краще розуміти своїх клієнтів, як покращити для них
+          <br />
+          продукт, маркетинг, продажі та сервіс.
+        </p>
+        <h4 class="contact__form_text animationLeftToRight">
+          ваші контакти
+        </h4>
+        <input
+                type="text"
+                placeholder="Ваше ім’я*"
+                class="contact__form_input animationLeftToRight"
+        />
+        <div class="contact__form_row">
+          <input
+                  type="text"
+                  placeholder="Ваш номер телефону*"
+                  class="contact__form_input animationLeftToRight"
+          />
+          <input
+                  type="text"
+                  placeholder="Ваша ніша"
+                  class="contact__form_input animationRightToLeft"
+          />
+        </div>
+        <input
+                type="text"
+                placeholder="Отримати"
+                class="contact__form_input animationLeftToRight"
+        />
+        <div class="contact__form_flex">
+          <a href="thanks.html" class="contact__form_button bt-90">
+            Отримати консультацію
+          </a>
+          <p class="contact__form_oferta white-opacity-50">
+            Натискаючи кнопку “Обговорити проєкт”, ви даєте згоду на обробку
+            особистих даних.
+            <a href="#" class="contact__form_oferta_link">Детальніше</a>
+          </p>
+        </div>
+      </form>
+      <button class="modal__exit">
+        <span class="modal__exit_span"></span>
+        <span class="modal__exit_span"></span>
+      </button>
+    </div>
     <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
