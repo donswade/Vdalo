@@ -113,7 +113,7 @@
           </li>
         </ul>
       </div>
-      <a href="#consultation" class="header__button">Зв’язатися з нами</a>
+      <button class=" toggleModalWindow header__button">Зв’язатися з нами</button>
       <button class="header__mobile">
         <span></span>
       </button>
@@ -157,8 +157,8 @@
               клієнтів з реклами в Google, Facebook, Instagram, TikTok і через
               SEO-просування.
             </div>
-            <a href="#consultation" class="aboutService__button bt-90"
-              >Зв’язатися з нами</a
+            <button class=" toggleModalWindow aboutService__button bt-90"
+              >Зв’язатися з нами</button
             >
           </div>
           <div class="aboutService__column contact__line"></div>
@@ -445,9 +445,8 @@
               type="text"
               class="aboutService__input"
             />
-            <a href="#consultation" class="aboutService__button bt-90"
-              >Зв’язатися з нами</a
-            >
+            <a href="thanks.html" class=" aboutService__button bt-90"
+              >Зв’язатися з нами</a>
           </div>
           <div class="aboutService__column contact__line"></div>
           <div class="aboutService__column">
@@ -998,6 +997,59 @@
         </div>
       </div>
     </footer>
+  <div class="modal">
+    <form class="contact__form">
+      <h2 class="contact__form_title title animationTopToBottom">
+        СКОНВЕРТУЙТЕ ВАШУ <br />
+        АУДИТОРІЮ В інтернеті!
+      </h2>
+      <p class="contact__form_desciption white-opacity animationTopToBottom">
+        Ви будете краще розуміти своїх клієнтів, як покращити для них
+        <br />
+        продукт, маркетинг, продажі та сервіс.
+      </p>
+      <h4 class="contact__form_text animationTopToBottom">
+        ваші контакти
+      </h4>
+      <input
+              type="text"
+              placeholder="Ваше ім’я*"
+              class="contact__form_input animationTopToBottom"
+      />
+      <div class="contact__form_row">
+        <input
+                type="text"
+                placeholder="Ваш номер телефону*"
+                class="contact__form_input animationTopToBottom"
+        />
+        <input
+                type="text"
+                placeholder="Ваша ніша"
+                class="contact__form_input animationRightToLeft"
+        />
+      </div>
+      <input
+              type="text"
+              placeholder="Отримати"
+              class="contact__form_input animationTopToBottom"
+      />
+      <div class="contact__form_flex">
+        <a href="thanks.html" class="contact__form_button bt-90  animationTopToBottom">
+          Отримати консультацію
+        </a>
+        <p class="contact__form_oferta white-opacity-50 animationTopToBottom">
+          Натискаючи кнопку “Обговорити проєкт”, ви даєте згоду на обробку
+          особистих даних.
+          <a href="#" class="contact__form_oferta_link">Детальніше</a>
+        </p>
+      </div>
+    </form>
+    <button class="modal__exit">
+      <span class="modal__exit_span"></span>
+      <span class="modal__exit_span"></span>
+    </button>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.min.js" defer></script>
   </body>
